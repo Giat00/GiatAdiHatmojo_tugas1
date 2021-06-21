@@ -1,9 +1,9 @@
 package menu;
 
 public class Menu2 extends Menu1 {
-	int nilai;
-	String atribut2;
-	String atribut3;
+	private int nilai;
+	private String atribut2;
+	private String atribut3;
 		
 	//2method subclass
 	public String grade() {

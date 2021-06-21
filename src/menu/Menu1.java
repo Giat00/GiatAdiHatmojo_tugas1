@@ -1,7 +1,9 @@
 package menu;
 
-public class Menu1 {
-	
+
+//parentClass
+public class Menu1  {
+
 	//deklerasi 8atribut
 	private String nama;
 	private String npm;
@@ -12,48 +14,51 @@ public class Menu1 {
 	private double tugas;
 	private double uts;
 	
+	
 	//deklarasi 4method
-		//method untuk mencetak nilai
-		public void cetakketlulus() {		
-			System.out.println("Anda Lulus");			
-		}
-		//method untuk grade
-		public void grade1() {
-			   System.out.println("A");
-		}
-		//method NIlai Akhir
-		public double nilaiakhir() {
-			double nilai = getkehadiran()*0.3+gettugas()*0.3+getuts()*0.2+getuas()*0.2;
-			double data = 4;
-			double nilaiakhir = nilai/data;
-			
-			return nilaiakhir;
-		}
-		//membuat method tampilan
-		public void tampilan() {
-			System.out.println("NPM :" + this.nama);
-	        System.out.println("NPM :" + this.npm);
-	        System.out.println("Kelas :" + this.kelas);
-		}
+	//method untuk mencetak nilai
+	public void cetakketlulus() {		
+		System.out.println("Anda Lulus");			
+	}
+	//method untuk grade
+	public void grade1() {
+		   System.out.println("A");
+	}
+	//method NIlai Akhir
+	public double nilaiakhir() {
+		double nilai = getkehadiran()*0.3+gettugas()*0.3+getuts()*0.2+getuas()*0.2;
+		double data = 4;
+		double nilaiakhir = nilai/data;
 		
-		public Menu1(){
-	    }
-		public Menu1(String nama, String npm, String kelas){
-		    	this.nama = nama;
-		        this.npm = npm;
-		        this.kelas = kelas;
-		}
-	    public Menu1(String nama, String npm, String kelas, int nilai, double uas, double kehadiran, double tugas, double uts){
+		return nilaiakhir;
+	}
+	public void tampilan() {
+		System.out.println("NPM :" + this.nama);
+        System.out.println("NPM :" + this.npm);
+        System.out.println("Kelas :" + this.kelas);
+	}
+	
+	//membuat 3buah constructor
+	public Menu1(){
+    }
+	public Menu1(String nama, String npm, String kelas){
 	    	this.nama = nama;
 	        this.npm = npm;
 	        this.kelas = kelas;
-	        this.nilai = nilai;
-	    	this.uas = uas;
-	    	this.kehadiran = kehadiran;
-	    	this.tugas = tugas ;
-	    	this.uts = uts;
-	    }
-	  //membuat getter and setter untuk class menu1
+	}
+    public Menu1(String nama, String npm, String kelas, int nilai, double uas, double kehadiran, double tugas, double uts){
+    	this.nama = nama;
+        this.npm = npm;
+        this.kelas = kelas;
+        this.nilai = nilai;
+    	this.uas = uas;
+    	this.kehadiran = kehadiran;
+    	this.tugas = tugas ;
+    	this.uts = uts;
+    }
+ 
+	
+    //membuat getter and setter untuk class menu1
 	    public String getnama() {
 	        return nama;
 	    }
@@ -105,11 +110,6 @@ public class Menu1 {
         public double getnilaiakhir() {
         	return nilaiakhir();
         }
-      //membuat ovveride
-      		public void cetakketlulus() {		
-      			System.out.println("Lulus");
-      		}
-      		public void grade1() {
-      			System.out.println("B");
-      	    }
+		
+        
 }
