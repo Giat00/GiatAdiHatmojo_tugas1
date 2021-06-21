@@ -35,4 +35,22 @@ public class Menu1 {
 	        System.out.println("NPM :" + this.npm);
 	        System.out.println("Kelas :" + this.kelas);
 		}
+		
+		public Menu1(){
+	    }
+		public Menu1(String nama, String npm, String kelas){
+		    	this.nama = nama;
+		        this.npm = npm;
+		        this.kelas = kelas;
+		}
+	    public Menu1(String nama, String npm, String kelas, int nilai, double uas, double kehadiran, double tugas, double uts){
+	    	this.nama = nama;
+	        this.npm = npm;
+	        this.kelas = kelas;
+	        this.nilai = nilai;
+	    	this.uas = uas;
+	    	this.kehadiran = kehadiran;
+	    	this.tugas = tugas ;
+	    	this.uts = uts;
+	    }
 }
