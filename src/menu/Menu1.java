@@ -105,4 +105,11 @@ public class Menu1 {
         public double getnilaiakhir() {
         	return nilaiakhir();
         }
+      //membuat ovveride
+      		public void cetakketlulus() {		
+      			System.out.println("Lulus");
+      		}
+      		public void grade1() {
+      			System.out.println("B");
+      	    }
 }
